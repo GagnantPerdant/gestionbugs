@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="AllTests" tests="1" assertions="2" failures="0" errors="0" time="0.045829">
+    <testsuite name="commentaireTest" file="/home/stephane/PhpstormProjects/gestionbugs/test/commentaireTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.045829">
+      <testcase name="test" class="commentaireTest" file="/home/stephane/PhpstormProjects/gestionbugs/test/commentaireTest.php" line="14" assertions="2" time="0.045829"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

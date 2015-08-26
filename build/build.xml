@@ -1,0 +1,22 @@
+<project name="gestionbugs" default="build">
+ <target name="clean">
+  <delete dir="report"/>
+ </target>
+
+ <target name="prepare">
+  <mkdir dir="report"/>
+ </target>
+
+ <target name="phpunit">
+  <phpunit printsummary="true" haltonfailure="true">
+    <formatter todir="report" type="xml"/>
+    <batchtest>
+      <fileset dir="../test">
+        <include name="*Test.php"/>
+      </fileset>
+    </batchtest>
+  </phpunit>
+ </target>
+
+ <target name="build" depends="clean,prepare,phpunit"/>
+</project>
